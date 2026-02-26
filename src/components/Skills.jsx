@@ -42,7 +42,8 @@ export default function Skills() {
             <SkillGroup label="Backend" items={cv.skills.backend} />
             <SkillGroup label="Database" items={cv.skills.database} />
             <SkillGroup label="DevOps & CI/CD" items={cv.skills.devops} />
-            <SkillGroup label="Tools & Monitoring" items={cv.skills.tools} />
+            <SkillGroup label="Automation" items={cv.skills.automate} />
+            <SkillGroup label="Testing & Monitoring" items={cv.skills.testing} />
 
             <p style={{ color: '#3fb950', fontSize: 13, marginTop: 8 }}>
               ✓ Done — {
