@@ -36,22 +36,39 @@ export default function HRTheme() {
             justifyContent: 'space-between',
             alignItems: 'flex-start',
             flexWrap: 'wrap',
-            gap: 16,
+            gap: 20,
             paddingBottom: 20,
             borderBottom: `3px solid ${navy}`,
             marginBottom: 24,
           }}
         >
-          <div>
-            <h1 style={{ fontSize: '2.2rem', fontWeight: 800, color: navy, letterSpacing: '-0.02em', margin: 0 }}>
-              {cv.name.toUpperCase()}
-            </h1>
-            <p style={{ fontSize: '1.1rem', color: navyLight, fontWeight: 500, margin: '4px 0 0' }}>
-              {cv.title}
-            </p>
-            <p style={{ color: textLight, fontSize: '0.85rem', margin: '4px 0 0' }}>
-              📍 {cv.location}
-            </p>
+          {/* Photo + Name */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+            <div style={{
+              width: 100,
+              height: 100,
+              borderRadius: '50%',
+              overflow: 'hidden',
+              border: `3px solid ${navy}`,
+              flexShrink: 0,
+            }}>
+              <img
+                src="/profile.jpg"
+                alt={cv.name}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </div>
+            <div>
+              <h1 style={{ fontSize: '2.2rem', fontWeight: 800, color: navy, letterSpacing: '-0.02em', margin: 0 }}>
+                {cv.name.toUpperCase()}
+              </h1>
+              <p style={{ fontSize: '1.1rem', color: navyLight, fontWeight: 500, margin: '4px 0 0' }}>
+                {cv.title}
+              </p>
+              <p style={{ color: textLight, fontSize: '0.85rem', margin: '4px 0 0' }}>
+                📍 {cv.location}
+              </p>
+            </div>
           </div>
 
           <div style={{ textAlign: 'right', fontSize: '0.88rem', color: textMid, lineHeight: 1.9 }}>

@@ -13,6 +13,24 @@ export default function Hero() {
       }}
     >
       <div style={{ maxWidth: 720, width: '100%' }}>
+        {/* Profile Photo */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 28 }}>
+          <div style={{
+            width: 120,
+            height: 120,
+            borderRadius: '50%',
+            overflow: 'hidden',
+            border: '3px solid #3fb950',
+            boxShadow: '0 0 20px rgba(63,185,80,0.3)',
+          }}>
+            <img
+              src="/profile.jpg"
+              alt={cv.name}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+        </div>
+
         <div className="terminal-window">
           <div className="terminal-titlebar">
             <span className="dot" style={{ background: '#ff5f57' }} />
