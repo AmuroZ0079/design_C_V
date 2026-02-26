@@ -101,7 +101,7 @@ function DevLayout() {
 }
 
 export default function App() {
-  const [theme, setTheme] = useState('dev')
+  const [theme, setTheme] = useState('hr')
 
   return (
     <>
