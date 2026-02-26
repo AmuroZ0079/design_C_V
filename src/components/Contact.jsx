@@ -24,9 +24,12 @@ export default function Contact() {
             </p>
 
             <div style={{ paddingLeft: 16, marginBottom: 24 }}>
+              <ContactRow label="phone" value={cv.contact.phone} href={`tel:${cv.contact.phone}`} />
               <ContactRow label="email" value={cv.contact.email} href={`mailto:${cv.contact.email}`} />
               <ContactRow label="github" value={cv.contact.github} href={`https://${cv.contact.github}`} />
-              <ContactRow label="linkedin" value={cv.contact.linkedin} href={`https://${cv.contact.linkedin}`} />
+              {cv.contact.linkedin && (
+                <ContactRow label="linkedin" value={cv.contact.linkedin} href={`https://${cv.contact.linkedin}`} />
+              )}
             </div>
 
             <p style={{ color: '#3fb950', fontSize: 13 }}>

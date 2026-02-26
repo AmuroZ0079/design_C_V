@@ -39,9 +39,13 @@ export default function Experience() {
                   {job.role}
                 </p>
 
-                <p style={{ color: '#c9d1d9', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: 10 }}>
-                  {job.description}
-                </p>
+                <ul style={{ color: '#c9d1d9', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: 10, paddingLeft: 0, listStyle: 'none' }}>
+                  {job.description.map((item, j) => (
+                    <li key={j} style={{ marginBottom: 4 }}>
+                      <span style={{ color: '#8b949e' }}>› </span>{item}
+                    </li>
+                  ))}
+                </ul>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 0 }}>
                   {job.stack.map(tech => (

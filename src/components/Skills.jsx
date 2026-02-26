@@ -38,10 +38,11 @@ export default function Skills() {
               {' '}skills --list --all
             </p>
 
-            <SkillGroup label="Languages" items={cv.skills.languages} />
-            <SkillGroup label="Frameworks & Libraries" items={cv.skills.frameworks} />
-            <SkillGroup label="Tools & Platforms" items={cv.skills.tools} />
-            <SkillGroup label="Databases" items={cv.skills.databases} />
+            <SkillGroup label="Frontend" items={cv.skills.frontend} />
+            <SkillGroup label="Backend" items={cv.skills.backend} />
+            <SkillGroup label="Database" items={cv.skills.database} />
+            <SkillGroup label="DevOps & CI/CD" items={cv.skills.devops} />
+            <SkillGroup label="Tools & Monitoring" items={cv.skills.tools} />
 
             <p style={{ color: '#3fb950', fontSize: 13, marginTop: 8 }}>
               ✓ Done — {
